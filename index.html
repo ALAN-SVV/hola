@@ -3,23 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campeonato Ecuatoriano de Fútbol</title>
+    <link rel="stylesheet" href="estilos/base.css"><!--Links de estilos css-->
+    <link rel="stylesheet" href="estilos/main.css">
+    <link rel="stylesheet" href="estilos/vendor.css">
+    <title>Campeonato Ecuatoriano de Fútbol</title><!--titulo de la pagina-->
 </head>
 <body>
     <!--titulo-->
  <section>
-    <h1>Liga Pro 2024 <img src="https://a.espncdn.com/photo/2023/0222/r1134908_1296x729_16-9.jpg"
-     alt="Liga Pro Logo" width="800px" height="500px" title="LIga Pro"></h1>
-     
-<!--table-->
- 
-<table border="10px"> 
-    <!-- <tr>
-    Tabla de Posiciones 
-     </tr>-->
+    <img src="https://a.espncdn.com/photo/2023/0222/r1134908_1296x729_16-9.jpg"
+     alt="Liga Pro Logo" width="1300px" height="600px" title="LIga Pro"><!--imágen sobre la liga pro de acuerdo a los pixeles puestos -->
+    <center><h1>Liga Pro 2024 </h1></center><!--título centrado-->
+    <nav class="header-nav-wrap">
+        <ul class="header-main-nav"><!--Creamos una clase para poner el menú en una lista desordenada-->
+            <li class="current"><a href="#Tabla de Posiciones" class="smoothscroll" title="intro">Tabla de Posiciones</a></li><!--ponemos el nombre de las distintas secciones-->
+
+            <li> <a href="#Resumen de la Tabla en el siguiente vídeo" title="Resumen de la Tabla en el siguiente vídeo"
+                 class="smoothscroll">Resumen de la Tabla en el siguiente vídeo</a></li>
+
+            <li> <a href="#Ultimos Resultados" title="Ultimos Resultados" class="smoothscroll">Ultimos Resultados</a></li>
+
+            <li> <a href="#Estadísticas de goles" title="Estadísticas de goles" class="smoothscroll">Estadísticas de goles</a></li>
+
+            <li> <a href="#Redes Sociales" title="Redes Sociales" class="smoothscroll">Redes Sociales</a></li>
+
+            <li> <a href="#Acerca del Campeonato" title="Acerca del Campeonato" class="smoothscroll">Acerca del Campeonato</a></li>
+            
+        </ul>
+ </section>
+ <section>
+ <!--en esta tabla vendra las posiciones de la liga utilizando un comando de tabla y etiquetas de titulos-->
+<table border="10px"> <!--aumentamos pixeles para que se vea mas grande la tabla-->
      <thead>
-        <th><h3>Tabla de Posiciones</h3></th>
-     </thead>
+        <th><h3>Tabla de Posiciones</h3></th><!--título-->
+     </thead><!--información de la tabla-->
      <thead>
          <th> Posición </th>
          <th>Equipo</th>
@@ -36,7 +53,7 @@
          <tr> 
              <td>1</td>
              <td>Ind. del Valle<img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Independiente_del_Valle_2022_Logo_Campe%C3%B3n_Sudamericana.png"
-                alt="" width="20px" height="25px"> </td>
+                alt="" width="20px" height="25px"> </td><!--imágen del escudo del equipo-->
              <td>35</td>
              <td>15</td>
              <td>10</td>
@@ -242,9 +259,9 @@
     </section>
  <!--Resultados hasta ahora-->
 <div>
-    <table border="10px"> 
+    <table border="10px"> <!--de la misma manera guardamos en esta tabla los ultimos resultados-->
          <thead>
-            <th><h3>Ultimos Resultados</h3></th>
+            <th><h3>Ultimos Resultados</h3></th><!--Utilizamos diferentes tamaños de palabras para que sean visibles-->
          </thead>
          <tbody>
              <td>U. Católica <h1>2</h1></td>
@@ -253,7 +270,7 @@
              <td>Estadio Olímpico Atahualpa</td>
          <tbody>
         <tbody>
-             <td>Emelec 3</td>
+             <td>Emelec<h1> 3 </h1></td>
              <td>vs</td>
              <td>Universitario <h1>1</h1></td>
              <td>Estadio George Capwell Banco del Austro</td>
@@ -296,39 +313,40 @@
          <tbody>  
 </div>
 <div>
-    <h1> Resumen de la Tabla en el siguiente vídeo </h1>
+    <h1> Resumen de la Tabla en el siguiente vídeo </h1><!--en este apartado ponemos el último video resumido de la jornada-->
     <a href="https://youtu.be/PaKA-5WagWA?si=kysk_MOEBhF4X3Np"> <img src="https://www.lahora.com.ec/wp-content/uploads/2024/03/ligapro.jpeg"
-        width="100px" height="100px" title="Resumen"></a>
-<!--video para que el usuario pueda ver el resumen de la hornada deportiva-->
-<div></div>
+        width="100px" height="100px" title="Resumen"></a><!--adjuntamos el link junto con una imagen -->
+
+</div>
+<div><!--Ponemos un contenedor y ponemos datos de goles-->
     <table border="10px"> 
-         <thead>
+         <thead><!--Seguimos poniendo distintos tamaños de letras-->
             <th><h3>Estadísticas de goles</h3></th>
          </thead>
          <tbody>
             <td><h4>1.Club Universidad Católica</h4></td>
-            <td><h2>47</h2></td>
+            <td><h3>47</h3></td>
         <tbody>  
             <tbody>
                 <td><h4>2.Liga Deportiva Universitaria</h4></td>
-                <td><h2>43</h2></td>
+                <td><h3>43</h3></td>
             <tbody> 
             <tbody>
                 <td><h4>3.Club Independiente del Valle</h4></td>
-                <td><h2>40</h2></td>
+                <td><h3>40</h3></td>
             <tbody> 
             <tbody>
             <td><h4>4.Sociedad Deportiva Aucas</h4></td>
-            <td><h2>36</h2></td>
+            <td><h3>36</h3></td>
         <tbody> 
             <tbody>
                 <td><h4>5.Barcelona Sporting Club</h4></td>
-                <td><h2>35</h2></td>
+                <td><h3>35</h3></td>
             <tbody> 
 </div>
 <section>
-    <h2>Acerca del Campeonato </h2>
-    <P>
+    <h3>Acerca del Campeonato </h3><!--ponemos un poco de la historia del campeonato-->
+    <P><!--separamos párrafos con la etiqueta p -->
         La Serie A ecuatoriana conocida como LigaPro, es la parte principal del sistema de ligas 
         de fútbol ecuatoriano, organizada por la Liga Ecuatoriana de Fútbol Profesional desde el año 2019.
          Hasta el año 2018, estaba organizada por la Federación Ecuatoriana de Fútbol.
@@ -344,6 +362,19 @@
         El actual campeón es la Liga de Quito, quien logró el título número doce en su historia
     </p>
 </section>
+<div>
+    <h1>Redes sociales</h1><!--Compartimos las diferentes redes de la Liga Pro-->
+    <ul class="header social"><!--Creamos una clase y con una lista desordenada ponemos los iconos de las redes sociales-->
+        <li><a href="#https://www.facebook.com/LigaProEC/?locale=es_LA"><i class="fab fa-facebook" aria-hidden="true"></i></a></li> <!--<i> icono-->
+
+        <li><a href="#LigaPro (@LigaProEC) · X"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+
+        <li><a href="#https://www.instagram.com/ligaproec/?hl=es-la"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+
+        <li><a href="#https://youtu.be/Q1L3FhpnwsE?si=JhgxI8ijqVRVEsZu"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+
+    </ul>
+</div>
 </body>
 </html>
 </body>

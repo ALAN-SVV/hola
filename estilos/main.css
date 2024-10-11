@@ -1,0 +1,68 @@
+html {
+    font-size: 16px; /*pixeles para el tamaño de las letras*/
+}
+
+/*Voy a usar mediasquery para hacer adaptable 
+la letra a un dispositivo diferente*/
+@media screen and(max-width:400px) {
+    html {
+        font-size: 9.411764705882353px; /*comando para que sea adaptable a una pantalla de 9 pixeles*/
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: rgb(226, 236, 130);/*color del fondo*/
+    font-family: "Oswald", sans-serif;/*tipo de letra*/
+    font-size: 1.7rem;/*espacio de lineas*/
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.882; /*se multiplica por el rem anterior*/
+    color: rgb(13, 0, 128); /*color de viñetas*/
+    margin: 0; /*margen  exterior*/
+    padding: 12px;/*margen interior*/
+}
+
+/*Estilos a los links*/
+a {
+    color: rgb(128, 19, 0);/*color de los links*/
+    transition: all 0.3s ease-in-out;/*tiempo que dura el color en el link*/
+}
+
+a:hover,/*establecer un segundo plano a un elemeto*/
+a:focus,/*brillo*/
+a:active {/*activación*/
+    color:black;/*color que se combia al poner el mouse encima del link */
+
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+/*tipografía*/
+h1,/*eleccion de los diferentes titulos que estan con la etiqueta h*/
+h3,
+.h1,
+.h3{
+    font-family: "Frank Ruh1 libre", serif;
+    font-weight: 500;/*para agrandar las letras*/
+    font-style: normal;
+    color: brown;/*color de letra*/
+}
+h2,h4 .h2,.h4/*Llámamos a otra clase de letra para combiar su color*/
+{
+    font-family: "Frank Ruh1 libre", serif;
+    font-weight: 500;/*para agrandar las letras*/
+    font-style: normal;
+    color: blue;/*color de letra*/
+}
+/*Abrimos una clase de la tabla para cambiar el color de fondo*/
+table{
+    background-color:rgb(230, 174, 32);/*color del interior de la tabla*/
+}
